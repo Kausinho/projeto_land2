@@ -11,7 +11,7 @@ html,body{
 /*Divs gerais!*/
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@ html,body{
 /*****/
 
 header{
-    background-color: rgb(180,180,180);
+    background-color: rgb(220,220,220);
     padding: 10px 2% 40px 2%;
 }
 
@@ -120,7 +120,20 @@ section.cover-form{
 section.chamada{
     z-index: 1;
     width: 100%;
-    text-align: center; 
+    text-align: center;
+    position: relative; 
+}
+
+.icone-seta{
+    position: absolute;
+    left: 50%;
+    top: -32%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../images/arrow.png');
 }
 
 section.chamada .container{
@@ -168,13 +181,14 @@ section.chamada p{
     color: white;
 }
 
-footer{
+footer .container{
     text-align: center;
     padding: 20px 0;
+    background-color: rgb(220,220,220);
 }
 
 footer img{
-    width: 120px;
+    width: 130px;
 }
 
 footer p{
